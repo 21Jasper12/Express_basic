@@ -22,5 +22,3 @@ Express route設定與測試。
 * Node.js 14.16.0
 * Express 4.17.3
 * Express-Handlebars 3.3.0
-* Bootstrap 5.1.3
-* Font-awesome 5.8.1
