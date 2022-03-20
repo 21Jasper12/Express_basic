@@ -8,8 +8,21 @@ app.set('view engine', 'handlebars')
 
 app.use(express.static('public'))
 
+const title = [
+  'About',
+  'Portfolio',
+  'Contact'
+]
+
 app.get('/', (req, res) => {
   res.render('index')
+})
+
+app.get('/:title', (req, res) => {
+  const changeTitle = title.find((title) => title === (req.params.title))
+  console.log(changeTitle)
+
+  res.render('show_title', { title: changeTitle })
 })
 
 app.listen(port, () => {
