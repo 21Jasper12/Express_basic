@@ -9,9 +9,9 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
 const title = [
-  'About',
-  'Portfolio',
-  'Contact'
+    'About',
+    'Portfolio',
+    'Contact'
 ]
 
 app.get('/', (req, res) => {
@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:title', (req, res) => {
-  const changeTitle = title.find((title) => title === (req.params.title))
-  
+  const changeTitle = title.find((title) => title.toLocaleLowerCase() === (req.params.title.toLocaleLowerCase()))
+
   res.render('show_title', { title: changeTitle })
 })
 
