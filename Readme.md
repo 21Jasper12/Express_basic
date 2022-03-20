@@ -1,5 +1,5 @@
 # Express 基礎
-![image](https://github.com/21Jasper12/Restaurant-List/blob/main/public/img/restaurant.jpg)
+![image](https://github.com/21Jasper12/Express_basic/blob/main/img/Express_basic.jpg)
 
 ## 介紹
 ---
