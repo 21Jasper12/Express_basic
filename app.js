@@ -20,8 +20,7 @@ app.get('/', (req, res) => {
 
 app.get('/:title', (req, res) => {
   const changeTitle = title.find((title) => title === (req.params.title))
-  console.log(changeTitle)
-
+  
   res.render('show_title', { title: changeTitle })
 })
 
