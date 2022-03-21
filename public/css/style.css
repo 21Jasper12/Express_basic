@@ -88,3 +88,11 @@ button {
 a:hover{
   background-color: bisque;
 }
+
+input {
+  visibility: hidden;
+}
+
+input:checked ~ label a {
+  background-color: bisque;
+}
